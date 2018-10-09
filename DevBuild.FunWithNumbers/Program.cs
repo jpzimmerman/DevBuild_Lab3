@@ -49,6 +49,7 @@ namespace DevBuild.FunWithNumbers
             {
                 while (!parseSuccessful || (userNumber < 0 || userNumber > 100))
                 {
+                    Console.WriteLine(StringTable.EnterANumberString);
                     Console.WriteLine("Please pick a number between 1 and 100.");
                     parseSuccessful = ushort.TryParse(Console.ReadLine(), out userNumber);
                 }
